@@ -9,6 +9,7 @@ public class ReadAndCountRows {
 
         try(BufferedReader br = new BufferedReader(new FileReader(fileName))){
             String line;
+            br.readLine();
 
             while( (line = br.readLine()) != null){
                 numberOfRows++;
@@ -24,4 +25,4 @@ public class ReadAndCountRows {
         System.out.println(countRows(path));;
     }
 }
-//5
+//4
